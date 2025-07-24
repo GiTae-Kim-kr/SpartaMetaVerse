@@ -39,6 +39,18 @@ public class PlayerController : BaseController
         
     }
 
+    void OnJump(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+            if(!isJumping && jumpHeight <= 0f)
+            {
+                isJumping = true;   // 바닥에 있을 때만 점프하도록 설정함
+                jumpVelocity = 0f;    // 점프 시 velocity를 초기화
+            }
+            
+        }
+    }
 
 
 }
