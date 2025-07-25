@@ -52,5 +52,20 @@ public class PlayerController : BaseController
         }
     }
 
+    void OnCommunication(InputValue inputValue)
+    {
+        if (inputValue.isPressed)  // 키 눌렀을 때
+        {
+            //Debug.Log("대화 시도");
+            if (!isCommunicate)   // 대화 중이 아니라면  (대화를 안하고 있으니 대화를 시도할 수 있겠지)
+            {
+                //Debug.Log("대화 가능");
+                isCommunicate = true;
+            }
+        }
+    }
+
+
+
 
 }

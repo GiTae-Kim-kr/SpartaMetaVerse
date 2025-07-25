@@ -11,6 +11,7 @@ public class BaseController : MonoBehaviour
     // 1. 이동관련  2. 공격관련
     // 이동 관련해서 필요한것? 1. 스프라이트 모습 가져와야함.
     [SerializeField] private SpriteRenderer _spriteRenderer;
+    
     protected Vector2 movementDirection = Vector2.zero;  // 대상의 이동 방향 벡터
     public Vector2 MovementDirection { get { return movementDirection; } }   // 프로퍼티
 
@@ -23,11 +24,28 @@ public class BaseController : MonoBehaviour
 
     private static readonly int IsJump = Animator.StringToHash("IsJump");
 
+    protected bool isCommunicate = false;   // 대화중인지.
     protected bool isJumping = false;   // 점프 상태 관리
     protected float jumpHeight = 0f;                 // 공중에 떠 있는 높이
     protected float jumpVelocity = 0f;               // 높이 변화 속도
     protected float gravity = -70f;                  // 가상의 중력 값
     protected float initialJumpVelocity = 30f;       // 초기 점프 강도
+
+    protected CollisionSensor collisionSensor;
+    protected NpcController npcController;
+
+
+    [Header("NPC 상호작용")]
+    [SerializeField] private LayerMask levelCollisionLayer;    // 레이어 설정
+    [Range(0f, 20f)][SerializeField] protected float radius;
+    public float Radius
+    {
+        get => radius;
+        set => radius = Mathf.Clamp(value, 1f, 20f);
+    }
+
+    protected INPC currentNPC = null;
+
 
     protected virtual void Awake()
     {
@@ -36,6 +54,8 @@ public class BaseController : MonoBehaviour
         animHandler = GetComponent<AnimationHandler>();
         animator = GetComponentInChildren<Animator>();
         statHandler = GetComponent<StatHandler>();
+        collisionSensor = GetComponent<CollisionSensor>();
+        npcController = GetComponentInChildren<NpcController>();
     }
 
     protected virtual void Start()
@@ -53,8 +73,8 @@ public class BaseController : MonoBehaviour
         Movement(movementDirection);    // 이동 방향 벡터 넣어줌
         Rotate(lookDirection);
         JumpPhysicsUpdate();
+        Communicate();
 
-        
     }
 
     private void Movement(Vector2 direction)
@@ -116,5 +136,68 @@ public class BaseController : MonoBehaviour
         }
     }
 
+    protected void Communicate()
+    {
+        if (isCommunicate)
+        {
+            //Debug.Log("대화 시작");
+            CommunicateNPC();
+            if (currentNPC != null)
+            {
+                //Debug.Log("대화 중");
+                currentNPC.Talk();  // 대화 중이면 현재 NPC와 대화
+                isCommunicate = false;  // 대화 끝나면 false
+
+            }
+            else
+            {
+                //Debug.Log("대화 가능한 NPC 없음");
+                isCommunicate = false; 
+            }
+        }
+    }
+
+    protected void CommunicateNPC()
+    {
+        // 충돌 감지
+        Vector2 center = transform.position;
+        int npcLayerMask = LayerMask.GetMask("NPC");
+        Collider2D[] nearbyNPC = Physics2D.OverlapCircleAll(center, radius, npcLayerMask);
+        //Debug.Log($"탐지된 NPC 수: {nearbyNPC.Length}, radius: {radius}");
+
+        Collider2D closetNPC = null;
+        float minDistance = Mathf.Infinity;  // 무한대로 초기화
+
+        foreach (var collider in nearbyNPC)
+        {
+            float dist = Vector2.Distance(center, collider.transform.position);  // 현재 플레이어와 NPC 사이의 거리를 계산
+            //Debug.Log($"NPC 이름: {collider.name}, 거리: {dist}");
+            if (dist < minDistance)  // 만약 현재 NPC가 가장 가까운 NPC라면
+            {
+                minDistance = dist;
+                closetNPC = collider;
+            }
+        }
+
+        if (closetNPC != null)
+        {
+            INPC npc = closetNPC.GetComponent<INPC>();  // 가장 가까운 NPC가 대화 가능한 NPC인지 확인
+            if (npc != null)
+            {
+                currentNPC = npc;  // 대화 가능한 NPC를 현재 NPC로 설정
+                //Debug.Log("가장 가까운 NPC 발견!");
+            }
+            else
+            {
+                //Debug.Log("가장 가까운 NPC는 INPC 미구현");
+                currentNPC = null;
+            }
+
+        }
+        else
+        {
+            currentNPC = null;
+        }
+    }
 
 }
