@@ -33,7 +33,7 @@ public class BaseController : MonoBehaviour
 
     protected CollisionSensor collisionSensor;
     protected NpcController npcController;
-
+    protected UIManager uiManager;
 
     [Header("NPC 상호작용")]
     [SerializeField] private LayerMask levelCollisionLayer;    // 레이어 설정
@@ -56,6 +56,7 @@ public class BaseController : MonoBehaviour
         statHandler = GetComponent<StatHandler>();
         collisionSensor = GetComponent<CollisionSensor>();
         npcController = GetComponentInChildren<NpcController>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     protected virtual void Start()

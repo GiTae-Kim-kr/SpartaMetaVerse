@@ -62,6 +62,12 @@ public class PlayerController : BaseController
                 //Debug.Log("대화 가능");
                 isCommunicate = true;
             }
+            else
+            {
+                currentNPC = null;
+
+                uiManager.ChangeState(UIState.None);
+            }
         }
     }
 

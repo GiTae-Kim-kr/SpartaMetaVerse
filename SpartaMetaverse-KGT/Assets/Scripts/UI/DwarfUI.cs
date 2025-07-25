@@ -2,16 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface INPC
+public class DwarfUI : BaseUI
 {
-    void Talk();  // 대화
-}
-
-
-
-public class NpcController : MonoBehaviour
-{
-
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +16,9 @@ public class NpcController : MonoBehaviour
     {
         
     }
+
+    public override UIState GetUIState()
+    {
+        return UIState.Dwarf;  // 이 UI가 Dwarf 상태일 때 활성화
+    }
 }
-
-
-
-
