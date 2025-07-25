@@ -115,7 +115,7 @@ public class BaseController : MonoBehaviour
                 jumpVelocity = initialJumpVelocity;
             }
 
-            jumpVelocity += gravity * Time.fixedDeltaTime;  // 시간 지날수록 점점 점프 속도 느려지게 설정
+            jumpVelocity += gravity * Time.fixedDeltaTime;  // 시간 지날수록 점점 점프 속도 느려지게 설정 
             jumpHeight += jumpVelocity * Time.fixedDeltaTime;   // 점프 속도로 점프 높이 구하기 때문
 
             //바닥에 도달하면 착지처리
@@ -127,9 +127,9 @@ public class BaseController : MonoBehaviour
             }
         }
 
-        if (_spriteRenderer != null)
+        if (_spriteRenderer != null) 
         {
-            Vector3 basePosition = transform.position;  // 2D이므로 원래 transform.position은 Rigidbody(x,y) 이므로, z는 0이거나 고정이어야 함.
+            Vector3 basePosition = transform.position;  // 2D이므로 원래 transform.position은 Rigidbody(x,y) 이므로, z는 0이거나 고정이어야 함.  
             // 다만 여기선 jumpHeight 를 Y축이나 z축에 변환해 줘야 해서 Vector3로 위치 값 받아옴.
 
             _spriteRenderer.transform.localPosition = new Vector3(0, jumpHeight * 0.1f, 0);  // 0.1f는 높이 조절을 위해 그냥 붙여준 스케일링 상수
