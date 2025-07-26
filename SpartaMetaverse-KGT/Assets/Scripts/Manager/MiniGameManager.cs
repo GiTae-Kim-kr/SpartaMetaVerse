@@ -33,8 +33,6 @@ public class MiniGameManager : MonoBehaviour
     {
         flappyUIManager = FindObjectOfType<FlappyUIManager>();
 
-        
-
     }
 
     // Update is called once per frame

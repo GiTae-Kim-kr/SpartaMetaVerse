@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     protected Rigidbody2D _rigidbody;
     protected MiniGameController miniGameManager;
     protected FlappyUIManager flappyUIManager;
+    protected MiniGameResultUI miniGameResultUI;
     public static GameManager Instance
     {
         get { return gameManager; }
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     {
         gameManager = this;
         flappyUIManager = FindObjectOfType<FlappyUIManager>();
+
+
     }
 
 
@@ -29,10 +32,12 @@ public class GameManager : MonoBehaviour
     {
         player = FindObjectOfType<PlayerController>();
         _rigidbody = GetComponent<Rigidbody2D>();    // 이거 불러와줘야 velocity의 값이 전달됨
-        
+     
         miniGameManager = FindObjectOfType<MiniGameController>();
         player.Init(this);  // 플레이어 컨트롤러 초기화
         
+        
+
 
     }
 

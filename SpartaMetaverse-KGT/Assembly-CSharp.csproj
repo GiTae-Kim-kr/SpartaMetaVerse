@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Manager\MiniGameManager.cs" />
     <Compile Include="Assets\Scripts\NPC\ElfNPC.cs" />
     <Compile Include="Assets\Scripts\UI\ElfUI.cs" />
+    <Compile Include="Assets\Scripts\NPC\DwarfNPC2.cs" />
     <Compile Include="Assets\Scripts\StatusController\AnimationHandler.cs" />
     <Compile Include="Assets\Scripts\UI\MiniGameResultUI.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyController\PlaneController.cs" />

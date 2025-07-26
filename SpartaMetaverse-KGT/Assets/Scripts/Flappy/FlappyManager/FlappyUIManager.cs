@@ -19,7 +19,21 @@ public class FlappyUIManager : MonoBehaviour
 
     private int bestScore = 0;
     public int BestScore {  get { return bestScore; } }
+
     private const string bestScoreKey = "BestScore"; // 최고 점수를 저장할 키
+
+    private int currentScore = 0;
+    public int CurrentSCore { get { return currentScore; } }
+    private const string currentScoreKey = "CurrentScore";
+
+    private static FlappyUIManager instance;
+    public static FlappyUIManager Instance {  get { return instance; } }
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         if (result != null)
@@ -39,7 +53,7 @@ public class FlappyUIManager : MonoBehaviour
         resultCancleButton.onClick.AddListener(OnCancleButton);
         restartButton.onClick.AddListener(OnRestartButton);
 
-        
+        currentScore = PlayerPrefs.GetInt(currentScoreKey, 0); // PlayerPrefs에서 현재 점수 가져오기.
         bestScore = PlayerPrefs.GetInt(bestScoreKey, 0); // PlayerPrefs에서 최고 점수 가져오기. 없으면 0으로 초기화.
         // PlayerPrefs는 게임의 설정이나 데이터를 저장하는데 사용되는 Unity의 간단한 데이터 저장 시스템.
 
@@ -66,7 +80,7 @@ public class FlappyUIManager : MonoBehaviour
         Debug.Log($"UpdateScore 호출: score={score}, bestScore={bestScore}");
         scoreText.text = score.ToString();
         bestScoreResult.text = bestScore.ToString();
-
+        PlayerPrefs.SetInt(currentScoreKey, score);
         if (bestScore < score)
         {
             bestScore = score;  // 최고 점수 갱신
@@ -75,6 +89,7 @@ public class FlappyUIManager : MonoBehaviour
             bestScoreResult.text = bestScore.ToString();
 
         }
+   
 
         
 
@@ -102,7 +117,9 @@ public class FlappyUIManager : MonoBehaviour
 
     public void OnCancleButton()
     {
+        PlayerPrefs.SetInt("ShowResultUI", 1);  // 메인 씬으로 이동했을때 결과창 볼 수 있게 1저장 해서 조건 설정.
         SceneManager.LoadScene("MainScene");
+        Time.timeScale = 1f; // 게임 일시정지 해제
     }
 
     public void OnRestartButton()
