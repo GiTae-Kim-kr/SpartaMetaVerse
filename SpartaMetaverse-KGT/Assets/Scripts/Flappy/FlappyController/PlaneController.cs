@@ -14,13 +14,15 @@ public class PlaneController : MonoBehaviour
 
     public bool isDead = false; // 죽었는지 여부
     private bool isFlap = false; // 충돌 여부
-    
+
+    public FlappyUIManager flappyUIManager;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        flappyUIManager = FindObjectOfType<FlappyUIManager>();
 
         if (_rigidbody == null)
         {
@@ -30,6 +32,8 @@ public class PlaneController : MonoBehaviour
         {
             Debug.LogError("Animator 없음");
         }
+
+
     }
 
     // Update is called once per frame
@@ -39,7 +43,8 @@ public class PlaneController : MonoBehaviour
         {
             if (deathCooldown <= 0f)
             {
-                Debug.Log("게임 오버");
+                //Debug.Log("게임 오버");
+                
             }
             else
             {

@@ -3577,7 +3577,7 @@ GameObject:
   - component: {fileID: 1262505759}
   - component: {fileID: 1262505758}
   m_Layer: 5
-  m_Name: BestScoreResult (1)
+  m_Name: CurrentScoreResult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6047,6 +6047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   result: {fileID: 1122693648}
   scoreText: {fileID: 1737112214}
+  bestScoreResult: {fileID: 1035551465}
+  currentScoreResult: {fileID: 1262505758}
   startButton: {fileID: 1433093029}
   cancleButton: {fileID: 294076983}
   resultCancleButton: {fileID: 1289177882}

@@ -9,6 +9,7 @@ public enum UIState
     None,
     Elf,
     Dwarf,
+    MiniGame,
 }
 public class UIManager : MonoBehaviour
 {
