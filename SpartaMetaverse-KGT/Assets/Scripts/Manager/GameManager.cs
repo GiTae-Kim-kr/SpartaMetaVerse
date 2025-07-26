@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerController player { get; private set; }
     protected Rigidbody2D _rigidbody;
-    protected MiniGameManager miniGameManager;
+    protected MiniGameController miniGameManager;
     protected FlappyUIManager flappyUIManager;
     public static GameManager Instance
     {
@@ -30,7 +30,9 @@ public class GameManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         _rigidbody = GetComponent<Rigidbody2D>();    // 이거 불러와줘야 velocity의 값이 전달됨
         
-        miniGameManager = FindObjectOfType<MiniGameManager>();
+        miniGameManager = FindObjectOfType<MiniGameController>();
+        player.Init(this);  // 플레이어 컨트롤러 초기화
+        
 
     }
 
@@ -40,23 +42,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void GameOver()
-    {
-        Debug.Log("Game Over");
-        flappyUIManager.ShowGameOver();
-    }
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // 현재 씬을 다시 로드하여 게임 재시작
-    }
-
-    public void AddScore(int score)
-    {
-        currentScore += score;  // 점수 추가
-        flappyUIManager.UpdateScore(currentScore);
-        
-        
-    }
 
 }
