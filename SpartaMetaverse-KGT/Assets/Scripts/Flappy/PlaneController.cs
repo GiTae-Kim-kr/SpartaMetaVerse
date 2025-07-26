@@ -39,7 +39,10 @@ public class PlaneController : MonoBehaviour
         {
             if (deathCooldown <= 0f)
             {
-                Debug.Log("Game Over");
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                {
+                    GameManager.Instance.RestartGame(); // 게임 매니저를 통해 게임 재시작
+                }
             }
             else
             {
@@ -56,6 +59,7 @@ public class PlaneController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isDead) return;
         Vector3 flapDirection = _rigidbody.velocity;  // 현재 속도를 가져옴
         flapDirection.x = forwardSpeed;  // 앞으로 이동하는 속도 설정
 
@@ -81,6 +85,7 @@ public class PlaneController : MonoBehaviour
         isDead = true;
         animator.SetInteger("IsDie", 1);  // 애니메이션 상태 죽음으로 변경
         deathCooldown = 1f;  // 충돌 후 딜레이 시간 설정
+        GameManager.Instance.GameOver(); //게임 매니저 통해서 게임 오버 처리.
     }
 
 }

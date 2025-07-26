@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\NPC\ElfNPC.cs" />
     <Compile Include="Assets\Scripts\UI\ElfUI.cs" />
     <Compile Include="Assets\Scripts\StatusController\AnimationHandler.cs" />
+    <Compile Include="Assets\Scripts\Flappy\BgLooper.cs" />
     <Compile Include="Assets\Scripts\StatusController\StatHandler.cs" />
     <Compile Include="Assets\Scripts\UI\BaseUI.cs" />
     <Compile Include="Assets\Scripts\Collision\NpcController.cs" />
