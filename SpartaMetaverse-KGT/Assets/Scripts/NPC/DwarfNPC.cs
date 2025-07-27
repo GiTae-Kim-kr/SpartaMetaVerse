@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class DwrafNPC : MonoBehaviour, INPC
 {
+    protected UIManager uiManager;
+
+    private void Awake()
+    {
+        uiManager = FindObjectOfType<UIManager>();  // UIManager를 찾아서 할당
+        if (uiManager == null)
+        {
+            Debug.LogError("UIManager 찾을 수 없음!");
+        }
+    }
+
     public void Talk()
     {
         Debug.Log("드워프와 대화");
         // ShowEnhanceOptions();   
+
+        uiManager?.ToggleUI(UIState.Dwarf);
 
     }
 

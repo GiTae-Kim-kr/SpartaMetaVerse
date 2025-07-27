@@ -6,6 +6,8 @@ public class FollowCamera : MonoBehaviour
 {
     public Transform target;  // 따라갈 대상
     float offsetX;            // 거리 유지
+    public bool enableBoundaryLimit;  // 원하는 씬에서 체크하기 위해 사용
+    public float minX, maxX;  // 카메라의 x축 이동 범위 제한
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,12 @@ public class FollowCamera : MonoBehaviour
 
         Vector3 pos = transform.position;
         pos.x = target.position.x + offsetX;
+
+        if (enableBoundaryLimit)
+        {
+            pos.x = Mathf.Clamp(pos.x, minX, maxX);  // 카메라의 x축 위치를 minX와 maxX 사이로 제한
+        }
+
         transform.position = pos;
     }
 }

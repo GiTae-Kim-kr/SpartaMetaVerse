@@ -2684,7 +2684,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2781,7 +2781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbd3597a213b9148a2085cf08fcaf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundVolume: 0.526
+  backgroundVolume: 0.085
   soundEffectVolume: 0
   soundEffectPitchVariance: 0
   backgroundClip: {fileID: 8300000, guid: 38f73087169496442bc49610f62dcd1a, type: 3}
@@ -5722,6 +5722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 512067915}
+  enableBoundaryLimit: 0
+  minX: 0
+  maxX: 0
 --- !u!1 &1850841937
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class DwrafNPC2 : MonoBehaviour, INPC
 
     public void Talk()
     {
-        Debug.Log("드워프와 대화");
+        Debug.Log("드워프와 대화2");
         // ShowEnhanceOptions();   
         uiManager?.ToggleUI(UIState.MiniGame); // UIManager를 통해 미니게임 결과창 활성화
 
