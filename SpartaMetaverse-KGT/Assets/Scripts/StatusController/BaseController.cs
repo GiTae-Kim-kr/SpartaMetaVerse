@@ -10,7 +10,7 @@ public class BaseController : MonoBehaviour
     // 전반적으로 공통적으로 가지고 있는 움직임 들을 다루는 추상 스크립트
     // 1. 이동관련  2. 공격관련
     // 이동 관련해서 필요한것? 1. 스프라이트 모습 가져와야함.
-    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
     
     protected Vector2 movementDirection = Vector2.zero;  // 대상의 이동 방향 벡터
     public Vector2 MovementDirection { get { return movementDirection; } }   // 프로퍼티
@@ -34,7 +34,9 @@ public class BaseController : MonoBehaviour
     protected CollisionSensor collisionSensor;
     protected NpcController npcController;
     protected UIManager uiManager;
-    
+    protected Horse horse;
+
+    protected bool isRiding = false;  // 탑승중인지.
 
     [Header("NPC 상호작용")]
     [SerializeField] private LayerMask levelCollisionLayer;    // 레이어 설정
@@ -58,7 +60,7 @@ public class BaseController : MonoBehaviour
         collisionSensor = GetComponent<CollisionSensor>();
         npcController = GetComponentInChildren<NpcController>();
         uiManager = FindObjectOfType<UIManager>();
-        
+        horse = GetComponentInChildren<Horse>();
     }
 
     protected virtual void Start()
@@ -201,6 +203,25 @@ public class BaseController : MonoBehaviour
         {
             currentNPC = null;
         }
+    }
+
+
+    protected void RidingSelect()
+    {
+        Vector2 center = transform.position;
+        int ridingLayerMask = LayerMask.GetMask("Riding");
+        Collider2D ride = Physics2D.OverlapCircle(center, radius, ridingLayerMask);
+
+        if (ride)
+        {
+            if (isRiding)   // 탑승 키를 눌렀을 때
+            {
+                horse.HorseRide();
+
+            }
+
+        }
+        else return;
     }
 
 }

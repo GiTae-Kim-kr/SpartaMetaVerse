@@ -72,7 +72,22 @@ public class PlayerController : BaseController
         }
     }
 
-
+    void OnRiding(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+            if (!isRiding)
+            {
+                isRiding = true;
+            }
+            else
+            {
+                //이미 타있을 때 내려야 함.
+                _spriteRenderer.transform.position = transform.position;
+                isRiding = false;
+            }
+        }
+    }
 
 
 }
