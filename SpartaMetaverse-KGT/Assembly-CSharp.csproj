@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Flappy\FlappyController\MiniGameController.cs" />
-    <Compile Include="Assets\Scripts\Collision\CollisionSensor.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyController\Obstacle.cs" />
     <Compile Include="Assets\Scripts\StatusController\PlayerController.cs" />
     <Compile Include="Assets\Scripts\StatusController\FollowCamera.cs" />
@@ -70,6 +69,7 @@
     <Compile Include="Assets\Scripts\Flappy\FlappyController\BgLooper.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyManager\FlappyUIManager.cs" />
     <Compile Include="Assets\Scripts\Manager\MiniGameManager.cs" />
+    <Compile Include="Assets\Scripts\NPC\NpcController.cs" />
     <Compile Include="Assets\Scripts\NPC\ElfNPC.cs" />
     <Compile Include="Assets\Scripts\UI\ElfUI.cs" />
     <Compile Include="Assets\Scripts\NPC\DwarfNPC2.cs" />
@@ -79,10 +79,10 @@
     <Compile Include="Assets\Scripts\Flappy\FlappyManager\FlappySoundManager.cs" />
     <Compile Include="Assets\Scripts\StatusController\StatHandler.cs" />
     <Compile Include="Assets\Scripts\UI\BaseUI.cs" />
-    <Compile Include="Assets\Scripts\Collision\NpcController.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\NPC\DwarfNPC.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyManager\FlappySoundSource.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\CollisionSensor.cs" />
     <Compile Include="Assets\Scripts\StatusController\NpcHandler.cs" />
     <Compile Include="Assets\Scripts\StatusController\BaseController.cs" />
   </ItemGroup>

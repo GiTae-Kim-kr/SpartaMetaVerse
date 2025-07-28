@@ -5,9 +5,11 @@ using UnityEngine;
 public class DwrafNPC : MonoBehaviour, INPC
 {
     protected UIManager uiManager;
+    [SerializeField] private DwarfUI dwarfUI;
 
     private void Awake()
     {
+        
         uiManager = FindObjectOfType<UIManager>();  // UIManager를 찾아서 할당
         if (uiManager == null)
         {
@@ -19,7 +21,8 @@ public class DwrafNPC : MonoBehaviour, INPC
     {
         Debug.Log("드워프와 대화");
         // ShowEnhanceOptions();   
-
+        dwarfUI.DialogueStep = 0;  // 대화 단계 초기화
+        dwarfUI.UpdateScripts(0, true, true);
         uiManager?.ToggleUI(UIState.Dwarf);
 
     }

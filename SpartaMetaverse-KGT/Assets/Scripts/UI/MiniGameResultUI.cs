@@ -24,6 +24,7 @@ public class MiniGameResultUI : BaseUI
     void Start()   // UI 활성화 상태 아니면 start가 호출되지 않음.
     {
         ShowResult();
+        ShowResultScore();
         exitButton.onClick.AddListener(OnExitButton);
     }
 
@@ -53,8 +54,8 @@ public class MiniGameResultUI : BaseUI
     {
         if (PlayerPrefs.GetInt("ShowResultUI", 0) == 1)
         {
-
-            ShowResultScore();
+            uiManager.ChangeState(UIState.MiniGame);
+            Debug.Log("1인거 읽어 왔음!");
             PlayerPrefs.SetInt("ShowResultUI", 0);
         }
     }

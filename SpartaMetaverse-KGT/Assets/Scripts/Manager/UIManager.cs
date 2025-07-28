@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     private Dictionary<UIState, BaseUI> uiDict;
     private UIState currentState = UIState.None;
 
+    
+
     protected void InitState()
     {
         currentState = UIState.None;
@@ -55,6 +57,9 @@ public class UIManager : MonoBehaviour
         {
             ChangeState(state); // 켜져 있지 않으면 다시 켬.
         }
+
+        
+
     }
 
 

@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     static GameManager gameManager;
+    
+
 
     public PlayerController player { get; private set; }
     protected Rigidbody2D _rigidbody;
     protected MiniGameController miniGameManager;
     protected FlappyUIManager flappyUIManager;
-    protected MiniGameResultUI miniGameResultUI;
     public static GameManager Instance
     {
         get { return gameManager; }
@@ -35,8 +36,8 @@ public class GameManager : MonoBehaviour
      
         miniGameManager = FindObjectOfType<MiniGameController>();
         player.Init(this);  // 플레이어 컨트롤러 초기화
-        
-        
+
+
 
 
     }

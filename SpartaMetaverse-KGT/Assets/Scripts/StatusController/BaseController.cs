@@ -34,6 +34,7 @@ public class BaseController : MonoBehaviour
     protected CollisionSensor collisionSensor;
     protected NpcController npcController;
     protected UIManager uiManager;
+    
 
     [Header("NPC 상호작용")]
     [SerializeField] private LayerMask levelCollisionLayer;    // 레이어 설정
@@ -57,6 +58,7 @@ public class BaseController : MonoBehaviour
         collisionSensor = GetComponent<CollisionSensor>();
         npcController = GetComponentInChildren<NpcController>();
         uiManager = FindObjectOfType<UIManager>();
+        
     }
 
     protected virtual void Start()
@@ -148,7 +150,7 @@ public class BaseController : MonoBehaviour
                 //Debug.Log("대화 중");
                 currentNPC.Talk();  // 대화 중이면 현재 NPC와 대화
                 isCommunicate = false;  // 대화 끝나면 false
-
+                
             }
             else
             {

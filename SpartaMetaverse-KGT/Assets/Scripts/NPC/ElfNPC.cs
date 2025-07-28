@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElfNPC : MonoBehaviour, INPC
 {
     protected UIManager uiManager;
+    [SerializeField] private ElfUI elfUI;
 
     private void Awake()
     {
@@ -19,6 +20,8 @@ public class ElfNPC : MonoBehaviour, INPC
     {
         Debug.Log("엘프와 대화");
         // StackMiniGame();   
+        elfUI.DialogueStep = 0;
+        elfUI.UpdateScripts(0, true, true);
         uiManager?.ToggleUI(UIState.Elf); // UIManager를 통해 엘프 대화창 활성화
 
     }
