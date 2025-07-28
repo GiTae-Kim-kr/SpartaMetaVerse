@@ -6,7 +6,7 @@ public class AnimationHandler : MonoBehaviour
 {  // 생성한 애니메이션에 대한 메서드를 생성해주고 애니메이터에서 생성한 파라미터 조정하는 스크립트
     private static readonly int IsMoving = Animator.StringToHash("IsMove");   // 성능 최적화 위해서 해시 값으로 변환. 문자열로 비교하면 성능 안좋음
     private static readonly int IsDamage = Animator.StringToHash("IsDamage");
-    
+    private static readonly int IsHorseMove = Animator.StringToHash("IsHorseMove");
 
     protected Animator animator;
 
@@ -25,6 +25,11 @@ public class AnimationHandler : MonoBehaviour
     public void Damage()
     {
         
+    }
+
+    public void Ride(bool isRiding)
+    {
+        animator.SetBool(IsHorseMove, isRiding);
     }
 
 

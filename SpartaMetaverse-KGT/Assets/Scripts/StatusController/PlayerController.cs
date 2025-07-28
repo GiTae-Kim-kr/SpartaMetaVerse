@@ -9,7 +9,26 @@ public class PlayerController : BaseController
     private Camera camera;
     private GameManager gameManager;
 
-    
+    private BaseController mountedVehicle = null;
+
+    protected override void FixedUpdate()
+    {
+        if (isRiding && mountedVehicle != null)
+        {
+            // 탑승 중에는 본인 이동X
+            _rigidbody.velocity = Vector2.zero; // 탑승 중에는 플레이어의 Rigidbody 속도를 0으로 설정하여 움직이지 않도록 함.
+            animHandler.Move(Vector2.zero);
+        }
+        else
+        {
+            base.FixedUpdate();
+        }
+    }
+
+    protected override void Update()
+    {
+        base.Update();   // 탑승 중에도 입력 갱신은 계속 해야 해서
+    }
 
     public void Init(GameManager gameManager)
     {
@@ -18,11 +37,43 @@ public class PlayerController : BaseController
     }
 
 
+    public void MountVehicle(BaseController vehicle)
+    {
+        if (vehicle is HorseController horse)
+        {
+            mountedVehicle = horse;
+            isRiding = true;
+            horse.Mount(this);
+        }
+    }
+
+    public void DisMountVehicle()
+    {
+        if (mountedVehicle != null)  
+        {
+            mountedVehicle.GetComponent<HorseController>()?.Dismount();
+            mountedVehicle = null;   
+            isRiding = false;
+        }
+    }
+
+
     void OnMove(InputValue inputValue)
     {
+
         movementDirection = inputValue.Get<Vector2>();
-        movementDirection = movementDirection.normalized; // 이동 방향을 설정. 방향 벡터로 만들기 위해 normalized를 사용한다.
-        // 정확히는 방향 정보만 남기고, 크기를 1로 맞춰주기 위해서인데, 복수의 키 누르면 이동속도가 달라질 수 있어서 해준거임.
+        
+        if ( movementDirection.magnitude < 0.1f)  
+        {
+            movementDirection = Vector2.zero;  // 
+            
+        }
+        else if (movementDirection.magnitude > 1f)
+        {
+            movementDirection = movementDirection.normalized; // 이동 방향을 설정. 방향 벡터로 만들기 위해 normalized를 사용한다.
+                                                              // 정확히는 방향 정보만 남기고, 크기를 1로 맞춰주기 위해서인데, 복수의 키 누르면 이동속도가 달라질 수 있어서 해준거임.
+                                                              //입력이 없으면 초기화
+        }
     }
 
     void OnLook(InputValue inputValue)
@@ -76,16 +127,10 @@ public class PlayerController : BaseController
     {
         if (inputValue.isPressed)
         {
-            if (!isRiding)
-            {
-                isRiding = true;
-            }
-            else
-            {
-                //이미 타있을 때 내려야 함.
-                _spriteRenderer.transform.position = transform.position;
-                isRiding = false;
-            }
+            if (isRiding)
+                DisMountVehicle();
+            else if (horse != null)
+                MountVehicle(horse);
         }
     }
 

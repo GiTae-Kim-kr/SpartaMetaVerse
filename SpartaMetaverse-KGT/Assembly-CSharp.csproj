@@ -61,11 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Flappy\FlappyController\MiniGameController.cs" />
+    <Compile Include="Assets\Scripts\Riding\HorseController.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyController\Obstacle.cs" />
     <Compile Include="Assets\Scripts\StatusController\PlayerController.cs" />
     <Compile Include="Assets\Scripts\StatusController\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\UI\DwarfUI.cs" />
-    <Compile Include="Assets\Scripts\NPC\Horse.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyController\BgLooper.cs" />
     <Compile Include="Assets\Scripts\Flappy\FlappyManager\FlappyUIManager.cs" />

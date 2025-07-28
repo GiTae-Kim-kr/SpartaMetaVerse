@@ -20,6 +20,7 @@ public class BaseController : MonoBehaviour
 
     protected AnimationHandler animHandler;
     protected Animator animator;
+    protected Animator horseAnimator;
     protected StatHandler statHandler;
 
     private static readonly int IsJump = Animator.StringToHash("IsJump");
@@ -34,13 +35,16 @@ public class BaseController : MonoBehaviour
     protected CollisionSensor collisionSensor;
     protected NpcController npcController;
     protected UIManager uiManager;
-    protected Horse horse;
+    protected HorseController horse;
 
     protected bool isRiding = false;  // 탑승중인지.
+    public bool IsRiding { get { return isRiding; } set { isRiding = value; } }  // 탑승 여부 프로퍼티
 
     [Header("NPC 상호작용")]
     [SerializeField] private LayerMask levelCollisionLayer;    // 레이어 설정
     [Range(0f, 20f)][SerializeField] protected float radius;
+
+
     public float Radius
     {
         get => radius;
@@ -60,12 +64,14 @@ public class BaseController : MonoBehaviour
         collisionSensor = GetComponent<CollisionSensor>();
         npcController = GetComponentInChildren<NpcController>();
         uiManager = FindObjectOfType<UIManager>();
-        horse = GetComponentInChildren<Horse>();
+
+        horse = null;           //탑승 시점에 할당하는게 좋음
+        horseAnimator = null;  // 말 애니메이션 없을 수도 있으니까 null로 초기화
     }
 
     protected virtual void Start()
     {
-
+        
     }
 
     protected virtual void Update()
@@ -75,14 +81,19 @@ public class BaseController : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        Movement(movementDirection);    // 이동 방향 벡터 넣어줌
-        Rotate(lookDirection);
-        JumpPhysicsUpdate();
-        Communicate();
+        if (!isRiding)
+        {
+            Movement(movementDirection);    // 이동 방향 벡터 넣어줌
+            Rotate(lookDirection);
+            JumpPhysicsUpdate();
+        }
 
+        Communicate();
+    
+        
     }
 
-    private void Movement(Vector2 direction)
+    protected virtual void Movement(Vector2 direction)
     {  // 이동 방향에 대한 벡터값을 받아서 움직임에 부가요소들을 설정해줌  // 모든 옵젝의 움직임에 대한 메서드
        // 예를 들면 이동속도, 넉백, 그런 움직임들
         direction = direction * statHandler.Speed; // 방향벡터에 힘을 곱해줘서 속도 값을 부여해줌
@@ -92,8 +103,10 @@ public class BaseController : MonoBehaviour
 
     }
 
-    private void Rotate(Vector2 direction)
-    {   // 입력받은 방향 벡터의 좌표를 계산해서 회전 각도를 알아내는 메서드
+    protected virtual void Rotate(Vector2 direction)
+    {
+        if (direction == Vector2.zero) return;
+        // 입력받은 방향 벡터의 좌표를 계산해서 회전 각도를 알아내는 메서드
         float rotz = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;  // Mathf.Atan2 아크탄젠트2는 주어진 좌표로부터 각도(라디안)을 계산한다.
                                                                              // Mathf.Rad2Deg 는 라디안 투 디그리라는 뜻으로, 각도(라디안) => 각도(도) 로 변환
         bool isLeft = Mathf.Abs(rotz) > 90f;    // 90도 보다 크면 왼쪽 방향
@@ -106,7 +119,7 @@ public class BaseController : MonoBehaviour
 
     }
 
-    protected void JumpPhysicsUpdate()   // 점프에 대한 물리 처리 메서드
+    protected virtual void JumpPhysicsUpdate()   // 점프에 대한 물리 처리 메서드
     {
         // 바닥과 닿아있는지 여부를 판단하는 bool 값. 바닥에 닿아있으면 true 값 반환.
         bool isGrounded = jumpHeight <= 0f;      // 점프 높이가 0이면 바닥에 닿아 있다.
@@ -141,7 +154,7 @@ public class BaseController : MonoBehaviour
         }
     }
 
-    protected void Communicate()
+    protected virtual void Communicate()
     {
         if (isCommunicate)
         {
@@ -211,17 +224,25 @@ public class BaseController : MonoBehaviour
         Vector2 center = transform.position;
         int ridingLayerMask = LayerMask.GetMask("Riding");
         Collider2D ride = Physics2D.OverlapCircle(center, radius, ridingLayerMask);
+        Debug.Log("말찾는중");
 
-        if (ride)
+        if (ride != null)
         {
-            if (isRiding)   // 탑승 키를 눌렀을 때
+            BaseController nearbyVehicle = ride.GetComponent<BaseController>();
+            if (nearbyVehicle != null)
             {
-                horse.HorseRide();
+                horse = nearbyVehicle as HorseController;
 
+                horseAnimator = horse?.GetComponentInChildren<Animator>();
             }
 
+
         }
-        else return;
+        else 
+        {
+            horse = null;
+            horseAnimator = null;
+        }
     }
 
 }
