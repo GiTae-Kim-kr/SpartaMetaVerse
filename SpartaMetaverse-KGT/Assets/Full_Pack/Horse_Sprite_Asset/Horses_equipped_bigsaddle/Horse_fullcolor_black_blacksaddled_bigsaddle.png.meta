@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 8404b72011ea9cf4d9219236e3a38f9c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1088
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832dd46259ecc364bb634b33d847d896
+      internalID: 1633914919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1088
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d063985b5dcac6743afafaf5779ba0b0
+      internalID: -516347308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1088
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feaacd25dfd19bc41869c3a7b6ee09ea
+      internalID: 195547248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1088
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b86f1e58fe84cd4fa5fddf38099db90
+      internalID: 13885131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_4
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1088
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8527065ae6f51d48b2a53b71a94c5fa
+      internalID: 1954844520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_5
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1088
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabf1c4f59b3bb640931f7b04ad15371
+      internalID: -1530706843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1088
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcf5df1f72544442a975ba6bf666b96
+      internalID: 2035718334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1088
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb24c56c53f38734fabdd31354d92f52
+      internalID: 2048828551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_8
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1088
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf9b82f1c111444b89d645fa54f625d
+      internalID: -607387791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1024
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3469f447e03f2c449727021fb5941bc
+      internalID: -336421248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1024
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a19e43714975d849b1b12d901d40b2f
+      internalID: 1915967070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1024
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01feda98e6789ad47b6defba3db1ab2a
+      internalID: -1658473074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1024
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83cfa842a3a0a0468633ee0d9ff056a
+      internalID: 462003486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1024
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fede2b5e3dc7d34795ca1485e422851
+      internalID: -844364622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_14
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1024
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b65e893635b9f48ba36d95e0d70125
+      internalID: 1703336276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_15
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1024
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bdff27b1aba954d90f04ab753bb786
+      internalID: -1582230946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_16
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1024
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca443be36320254479061a7795f3978d
+      internalID: -1097499064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_17
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 960
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58c40d6e6b144748a6f49d4900ae970
+      internalID: -1646593623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 960
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a17d104ced1dc74ca7639b1be41a91f
+      internalID: 858089520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_19
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 960
+        width: 63
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b684b07c58f1b4b83dfe3ffa24034c
+      internalID: -427508923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_20
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 960
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ed9730ce7d0bb40aeb8826f3051f10
+      internalID: -1328955048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 960
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41a867d5373359479ec24d3f3f87c08
+      internalID: 1729844522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_22
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 960
+        width: 64
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53d2f45001a440468da72003e9ee094
+      internalID: 682871838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 960
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7caa51e93d74984ea915aa30db9449a
+      internalID: 1190978307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_24
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 960
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fd55df3b27fa447afaefd9d578f6af
+      internalID: 981569205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_25
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 960
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155f6d1045b2b0e46955928b0b74ab05
+      internalID: -185370377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 898
+        width: 72
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43afc3404816fa44b3130c2fdb58ee8
+      internalID: -1431587884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 896
+        width: 71
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4faa93840a39ab4dae6894c1793f533
+      internalID: -1143767003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_28
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 896
+        width: 71
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3d9fccf26a6394a925c9735de28171
+      internalID: -265255379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 897
+        width: 72
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2d917b364d48f4c8288dc60146d612
+      internalID: 709563137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_30
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 899
+        width: 71
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addecc52613d1c4448fda1c7896bb2d6
+      internalID: -1227015320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_31
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 896
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9e3c5b19756014ea1633c1c0001857
+      internalID: -1987067502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 896
+        width: 72
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea26fc632b2b3c4187afc8b10c8e516
+      internalID: -273294754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_33
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 896
+        width: 73
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae09b43db8109e34c942d63b529fac15
+      internalID: -187872496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 72
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1484f7e87504b8942957ea0d5ef46e4b
+      internalID: -1365321307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 832
+        width: 71
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0edd287e5705a48af4d52a36d567ac
+      internalID: 992978467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 832
+        width: 70
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b48a86486b84044948dbd80aefe645
+      internalID: -817488148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_37
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 836
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dfdf2370d11564fad41e099a5df2a1
+      internalID: 828093331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_38
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 832
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a3f9cd20c555d4a8150b10e84688a3
+      internalID: 2080231295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horse_fullcolor_black_blacksaddled_bigsaddle_39
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 832
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba62d87fafbab64abb84755c494eb09
+      internalID: -699799570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Horse_fullcolor_black_blacksaddled_bigsaddle_0: 1633914919
+      Horse_fullcolor_black_blacksaddled_bigsaddle_1: -516347308
+      Horse_fullcolor_black_blacksaddled_bigsaddle_10: 1915967070
+      Horse_fullcolor_black_blacksaddled_bigsaddle_100: 840741187
+      Horse_fullcolor_black_blacksaddled_bigsaddle_101: -1078295726
+      Horse_fullcolor_black_blacksaddled_bigsaddle_102: -1438438407
+      Horse_fullcolor_black_blacksaddled_bigsaddle_103: 165029842
+      Horse_fullcolor_black_blacksaddled_bigsaddle_104: -71764027
+      Horse_fullcolor_black_blacksaddled_bigsaddle_105: -261742125
+      Horse_fullcolor_black_blacksaddled_bigsaddle_106: 1846440751
+      Horse_fullcolor_black_blacksaddled_bigsaddle_107: 1651119511
+      Horse_fullcolor_black_blacksaddled_bigsaddle_108: -1181337993
+      Horse_fullcolor_black_blacksaddled_bigsaddle_109: 276846519
+      Horse_fullcolor_black_blacksaddled_bigsaddle_11: -1658473074
+      Horse_fullcolor_black_blacksaddled_bigsaddle_110: -89115528
+      Horse_fullcolor_black_blacksaddled_bigsaddle_111: 1571746633
+      Horse_fullcolor_black_blacksaddled_bigsaddle_112: -882099748
+      Horse_fullcolor_black_blacksaddled_bigsaddle_113: -327828598
+      Horse_fullcolor_black_blacksaddled_bigsaddle_114: -1132964470
+      Horse_fullcolor_black_blacksaddled_bigsaddle_115: 631640007
+      Horse_fullcolor_black_blacksaddled_bigsaddle_116: 1943782810
+      Horse_fullcolor_black_blacksaddled_bigsaddle_117: 1145106675
+      Horse_fullcolor_black_blacksaddled_bigsaddle_118: 937814500
+      Horse_fullcolor_black_blacksaddled_bigsaddle_119: -1852059157
+      Horse_fullcolor_black_blacksaddled_bigsaddle_12: 462003486
+      Horse_fullcolor_black_blacksaddled_bigsaddle_120: -1468852810
+      Horse_fullcolor_black_blacksaddled_bigsaddle_121: 1934921569
+      Horse_fullcolor_black_blacksaddled_bigsaddle_122: 1748380557
+      Horse_fullcolor_black_blacksaddled_bigsaddle_123: 1508778376
+      Horse_fullcolor_black_blacksaddled_bigsaddle_124: 1706514382
+      Horse_fullcolor_black_blacksaddled_bigsaddle_13: -844364622
+      Horse_fullcolor_black_blacksaddled_bigsaddle_14: 1703336276
+      Horse_fullcolor_black_blacksaddled_bigsaddle_15: -1582230946
+      Horse_fullcolor_black_blacksaddled_bigsaddle_16: -1097499064
+      Horse_fullcolor_black_blacksaddled_bigsaddle_17: -1646593623
+      Horse_fullcolor_black_blacksaddled_bigsaddle_18: 858089520
+      Horse_fullcolor_black_blacksaddled_bigsaddle_19: -427508923
+      Horse_fullcolor_black_blacksaddled_bigsaddle_2: 195547248
+      Horse_fullcolor_black_blacksaddled_bigsaddle_20: -1328955048
+      Horse_fullcolor_black_blacksaddled_bigsaddle_21: 1729844522
+      Horse_fullcolor_black_blacksaddled_bigsaddle_22: 682871838
+      Horse_fullcolor_black_blacksaddled_bigsaddle_23: 1190978307
+      Horse_fullcolor_black_blacksaddled_bigsaddle_24: 981569205
+      Horse_fullcolor_black_blacksaddled_bigsaddle_25: -185370377
+      Horse_fullcolor_black_blacksaddled_bigsaddle_26: -1431587884
+      Horse_fullcolor_black_blacksaddled_bigsaddle_27: -1143767003
+      Horse_fullcolor_black_blacksaddled_bigsaddle_28: -265255379
+      Horse_fullcolor_black_blacksaddled_bigsaddle_29: 709563137
+      Horse_fullcolor_black_blacksaddled_bigsaddle_3: 13885131
+      Horse_fullcolor_black_blacksaddled_bigsaddle_30: -1227015320
+      Horse_fullcolor_black_blacksaddled_bigsaddle_31: -1987067502
+      Horse_fullcolor_black_blacksaddled_bigsaddle_32: -273294754
+      Horse_fullcolor_black_blacksaddled_bigsaddle_33: -187872496
+      Horse_fullcolor_black_blacksaddled_bigsaddle_34: -1365321307
+      Horse_fullcolor_black_blacksaddled_bigsaddle_35: 992978467
+      Horse_fullcolor_black_blacksaddled_bigsaddle_36: -817488148
+      Horse_fullcolor_black_blacksaddled_bigsaddle_37: 828093331
+      Horse_fullcolor_black_blacksaddled_bigsaddle_38: 2080231295
+      Horse_fullcolor_black_blacksaddled_bigsaddle_39: -699799570
+      Horse_fullcolor_black_blacksaddled_bigsaddle_4: 1954844520
+      Horse_fullcolor_black_blacksaddled_bigsaddle_40: -1378408138
+      Horse_fullcolor_black_blacksaddled_bigsaddle_41: -1129102788
+      Horse_fullcolor_black_blacksaddled_bigsaddle_42: -52552687
+      Horse_fullcolor_black_blacksaddled_bigsaddle_43: 945961693
+      Horse_fullcolor_black_blacksaddled_bigsaddle_44: -2052332809
+      Horse_fullcolor_black_blacksaddled_bigsaddle_45: -1706605066
+      Horse_fullcolor_black_blacksaddled_bigsaddle_46: -1670260183
+      Horse_fullcolor_black_blacksaddled_bigsaddle_47: -889854490
+      Horse_fullcolor_black_blacksaddled_bigsaddle_48: -281923931
+      Horse_fullcolor_black_blacksaddled_bigsaddle_49: -1615953720
+      Horse_fullcolor_black_blacksaddled_bigsaddle_5: -1530706843
+      Horse_fullcolor_black_blacksaddled_bigsaddle_50: -1938186543
+      Horse_fullcolor_black_blacksaddled_bigsaddle_51: 795324852
+      Horse_fullcolor_black_blacksaddled_bigsaddle_52: -422813423
+      Horse_fullcolor_black_blacksaddled_bigsaddle_53: -1804979543
+      Horse_fullcolor_black_blacksaddled_bigsaddle_54: -204528134
+      Horse_fullcolor_black_blacksaddled_bigsaddle_55: 878992115
+      Horse_fullcolor_black_blacksaddled_bigsaddle_56: 1373503686
+      Horse_fullcolor_black_blacksaddled_bigsaddle_57: -1334310911
+      Horse_fullcolor_black_blacksaddled_bigsaddle_58: -1248514093
+      Horse_fullcolor_black_blacksaddled_bigsaddle_59: 512476644
+      Horse_fullcolor_black_blacksaddled_bigsaddle_6: 2035718334
+      Horse_fullcolor_black_blacksaddled_bigsaddle_60: -854001489
+      Horse_fullcolor_black_blacksaddled_bigsaddle_61: -816908326
+      Horse_fullcolor_black_blacksaddled_bigsaddle_62: -888037625
+      Horse_fullcolor_black_blacksaddled_bigsaddle_63: -152803801
+      Horse_fullcolor_black_blacksaddled_bigsaddle_64: -938361820
+      Horse_fullcolor_black_blacksaddled_bigsaddle_65: 1764019929
+      Horse_fullcolor_black_blacksaddled_bigsaddle_66: -2130580084
+      Horse_fullcolor_black_blacksaddled_bigsaddle_67: -541940682
+      Horse_fullcolor_black_blacksaddled_bigsaddle_68: 1956283042
+      Horse_fullcolor_black_blacksaddled_bigsaddle_69: 270810301
+      Horse_fullcolor_black_blacksaddled_bigsaddle_7: 2048828551
+      Horse_fullcolor_black_blacksaddled_bigsaddle_70: 2131844937
+      Horse_fullcolor_black_blacksaddled_bigsaddle_71: 1713659332
+      Horse_fullcolor_black_blacksaddled_bigsaddle_72: -754823574
+      Horse_fullcolor_black_blacksaddled_bigsaddle_73: 846846931
+      Horse_fullcolor_black_blacksaddled_bigsaddle_74: 179389541
+      Horse_fullcolor_black_blacksaddled_bigsaddle_75: -771884509
+      Horse_fullcolor_black_blacksaddled_bigsaddle_76: 106022711
+      Horse_fullcolor_black_blacksaddled_bigsaddle_77: 2068036659
+      Horse_fullcolor_black_blacksaddled_bigsaddle_78: 1007554898
+      Horse_fullcolor_black_blacksaddled_bigsaddle_79: 1856240593
+      Horse_fullcolor_black_blacksaddled_bigsaddle_8: -607387791
+      Horse_fullcolor_black_blacksaddled_bigsaddle_80: 218590031
+      Horse_fullcolor_black_blacksaddled_bigsaddle_81: 2106022077
+      Horse_fullcolor_black_blacksaddled_bigsaddle_82: -123568420
+      Horse_fullcolor_black_blacksaddled_bigsaddle_83: -12819184
+      Horse_fullcolor_black_blacksaddled_bigsaddle_84: -399586856
+      Horse_fullcolor_black_blacksaddled_bigsaddle_85: -210348135
+      Horse_fullcolor_black_blacksaddled_bigsaddle_86: 230806078
+      Horse_fullcolor_black_blacksaddled_bigsaddle_87: 600507972
+      Horse_fullcolor_black_blacksaddled_bigsaddle_88: 2097438464
+      Horse_fullcolor_black_blacksaddled_bigsaddle_89: 90061678
+      Horse_fullcolor_black_blacksaddled_bigsaddle_9: -336421248
+      Horse_fullcolor_black_blacksaddled_bigsaddle_90: -1324543718
+      Horse_fullcolor_black_blacksaddled_bigsaddle_91: -474029636
+      Horse_fullcolor_black_blacksaddled_bigsaddle_92: -219568343
+      Horse_fullcolor_black_blacksaddled_bigsaddle_93: 604353490
+      Horse_fullcolor_black_blacksaddled_bigsaddle_94: -1177522839
+      Horse_fullcolor_black_blacksaddled_bigsaddle_95: 1370958348
+      Horse_fullcolor_black_blacksaddled_bigsaddle_96: -316601205
+      Horse_fullcolor_black_blacksaddled_bigsaddle_97: 1252335489
+      Horse_fullcolor_black_blacksaddled_bigsaddle_98: 2020037580
+      Horse_fullcolor_black_blacksaddled_bigsaddle_99: 1922816855
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
